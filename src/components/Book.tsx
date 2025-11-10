@@ -4,11 +4,14 @@ import { BookOpen, Download } from "lucide-react";
 
 const Book = () => {
   const chapters = [
-    "Chapter 1: Understanding the AI Revolution",
-    "Chapter 2: From Data to Decisions",
-    "Chapter 3: The Power of Language Models",
-    "Chapter 4: AI in Healthcare and Society",
-    "Chapter 5: Building Ethical AI for the Future",
+    "Chapter 1: Starting, But Not A Start",
+    "Chapter 2: The Lost One",
+    "Chapter 3: Tired of Listening",
+    "Chapter 4: The Founder",
+    "Chapter 5: The Longest Night",
+    "Chapter 6: Confusion",
+    "Chapter 7: The Big Step",
+    "Chapter 8: Is It The End?",
   ];
 
   return (
@@ -19,18 +22,32 @@ const Book = () => {
             Presenting Aakash Sehrawat as
           </p>
         </div>
+
         <div className="text-center mb-12 animate-slide-3d">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent px-4" style={{ textShadow: '0 4px 8px rgba(0,0,0,0.3)', wordBreak: 'keep-all' }}>
+          <h2
+            className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent px-4"
+            style={{
+              textShadow: "0 4px 8px rgba(0,0,0,0.3)",
+              wordBreak: "keep-all",
+            }}
+          >
             Writer
           </h2>
         </div>
 
-        <Card className="p-8 md:p-12 bg-card/50 backdrop-blur border-border/50 animate-slide-3d" style={{ transform: 'perspective(1000px)', boxShadow: '0 15px 35px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3)' }}>
+        <Card
+          className="p-8 md:p-12 bg-card/50 backdrop-blur border-border/50 animate-slide-3d"
+          style={{
+            transform: "perspective(1000px)",
+            boxShadow:
+              "0 15px 35px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3)",
+          }}
+        >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <div>
                 <h3 className="text-3xl font-bold text-foreground mb-2">
-                  AI and The Future of Automation
+                  Not A Start, Not The End
                 </h3>
                 <p className="text-primary font-medium">
                   by Aakash Sehrawat
@@ -38,15 +55,26 @@ const Book = () => {
               </div>
 
               <p className="text-muted-foreground leading-relaxed">
-                A comprehensive exploration of how artificial intelligence, machine learning, and automation are reshaping industries and redefining human potential. 
-                This book breaks down complex AI systems into simple concepts and real-world use cases, helping readers understand how automation can transform businesses and lives.
+                <strong>“Not A Start, Not The End – It’s Just Something That You
+                Blabber In Your Head”</strong> is a poetic journey through pain,
+                silence, and rediscovery. It unravels the voice of a soul that
+                forgets everything but never stops feeling. Through fragments of
+                English and Hindi verse, Aakash explores confusion, healing, and
+                the beauty of finding light in your own darkness. It’s not a
+                story about giving up—it’s about learning to breathe again,
+                softly, honestly, and with courage.
               </p>
 
               <div>
-                <h4 className="text-lg font-semibold text-foreground mb-3">Contents:</h4>
+                <h4 className="text-lg font-semibold text-foreground mb-3">
+                  Contents:
+                </h4>
                 <ul className="space-y-2">
                   {chapters.map((chapter, index) => (
-                    <li key={index} className="flex items-start gap-2 text-muted-foreground">
+                    <li
+                      key={index}
+                      className="flex items-start gap-2 text-muted-foreground"
+                    >
                       <span className="text-primary">•</span>
                       {chapter}
                     </li>
@@ -55,21 +83,31 @@ const Book = () => {
               </div>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button 
+                {/* Read Online Button */}
+                <Button
                   className="bg-gradient-primary hover:shadow-glow"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="/public/not a start.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <BookOpen className="h-4 w-4 mr-2" />
                     Read Online
                   </a>
                 </Button>
-                <Button 
+
+                {/* Download Button */}
+                <Button
                   variant="outline"
                   className="border-primary text-primary hover:bg-primary/10"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="/not%20a%20start.pdf"
+                    download="/public/not a start.pdf"
+                  >
                     <Download className="h-4 w-4 mr-2" />
                     Download PDF
                   </a>
@@ -82,7 +120,8 @@ const Book = () => {
                 <div className="text-center p-8">
                   <BookOpen className="h-16 w-16 text-primary-foreground mx-auto mb-4" />
                   <h4 className="text-xl font-bold text-primary-foreground mb-2">
-                    AI and The Future
+                    Not A Start,
+                    <br /> Not The End
                   </h4>
                   <p className="text-sm text-primary-foreground/80">
                     Aakash Sehrawat

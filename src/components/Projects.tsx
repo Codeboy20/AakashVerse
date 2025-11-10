@@ -15,8 +15,7 @@ const Projects = () => {
         "Dockerized, scalable, and production-ready",
       ],
       tech: ["FastAPI", "LangChain", "FAISS", "React", "Docker", "Azure"],
-      team: "Team of 5: Aakash Sehrawat (Lead AI Engineer), Shivam, Riya, Aman, Neha",
-      github: "#",
+      github: "https://github.com/Aakash091-dark/Enterprise-LLM-Powered-Knowledge-Assistant",
     },
     {
       title: "SwastyaSewa – Rural Telemedicine App",
@@ -30,8 +29,7 @@ const Projects = () => {
         "Multilingual & voice-assisted interface",
       ],
       tech: ["React Native", "Node.js", "MongoDB", "Twilio", "Azure"],
-      team: "Team: Aakash (AI/Backend), Ravi, Isha, Tanuj, Sanya",
-      github: "#",
+      github: "https://github.com/Aakash091-dark/SwastyaSewa",
     },
     {
       title: "AarogyaCraft",
@@ -44,8 +42,7 @@ const Projects = () => {
         "Scalable monorepo with authentication and admin dashboard",
       ],
       tech: ["React", "Node.js", "PostgreSQL", "FastAPI", "Azure"],
-      team: "Team: Aakash (Lead Engineer), Rohit, Simran, Arnav, Tanya",
-      github: "#",
+      github: "https://github.com/Aakash091-dark/AarogyaCraft",
     },
     {
       title: "VerseCraft – Creative Song Lyrics Generator",
@@ -58,8 +55,7 @@ const Projects = () => {
         "Built using Flask + PyTorch",
       ],
       tech: ["PyTorch", "Flask", "LSTM", "HTML/CSS"],
-      team: "",
-      github: "#",
+      github: "https://github.com/Aakash091-dark/VerseCraft",
     },
   ];
 
