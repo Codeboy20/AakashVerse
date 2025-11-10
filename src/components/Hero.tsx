@@ -3,17 +3,17 @@ import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero" style={{ boxShadow: 'inset 0 0 100px rgba(0,0,0,0.5)' }}>
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" style={{ boxShadow: '0 0 100px rgba(255,255,255,0.1)' }} />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s", boxShadow: '0 0 100px rgba(255,255,255,0.1)' }} />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <div className="space-y-4 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <div className="space-y-4 animate-slide-3d">
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent" style={{ textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>
               Aakash Sehrawat
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground">
@@ -21,11 +21,11 @@ const Hero = () => {
             </p>
           </div>
 
-          <p className="text-lg md:text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             Building intelligent systems that think, learn, and scale.
           </p>
 
-          <div className="prose prose-invert max-w-3xl mx-auto">
+          <div className="prose prose-invert max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             <p className="text-muted-foreground">
               I'm Aakash Sehrawat, an AI & Software Engineer passionate about turning complex ideas into scalable, data-driven systems.
               I specialize in <span className="text-primary font-semibold">FastAPI, LangChain, Azure, and Deep Learning</span>, building real-world solutions that combine automation, AI, and seamless user experience.
@@ -34,7 +34,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-4 justify-center items-center pt-4">
+          <div className="flex flex-wrap gap-4 justify-center items-center pt-4 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
             <Button 
               size="lg" 
               className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
@@ -66,7 +66,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="flex gap-6 justify-center pt-8">
+          <div className="flex gap-6 justify-center pt-8 animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
             <a 
               href="https://github.com/Aakash091-dark" 
               target="_blank" 

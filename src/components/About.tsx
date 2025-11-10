@@ -24,13 +24,13 @@ const About = () => {
   return (
     <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent" style={{ textShadow: '0 4px 8px rgba(0,0,0,0.3)' }}>
             Passion for Innovation. Precision in Code.
           </h2>
         </div>
 
-        <Card className="p-8 md:p-12 bg-card/50 backdrop-blur border-border/50">
+        <Card className="p-8 md:p-12 bg-card/50 backdrop-blur border-border/50 animate-slide-3d" style={{ transform: 'perspective(1000px)', boxShadow: '0 15px 35px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3)' }}>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             I'm an ambitious AI Engineer and Software Developer with a focus on creating automation systems and intelligent applications.
             My expertise includes FastAPI, LangChain, Azure, AWS, Python, and MLOps.
@@ -41,7 +41,12 @@ const About = () => {
             {highlights.map((highlight, index) => (
               <div 
                 key={index}
-                className="flex items-start gap-4 p-4 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors"
+                className="flex items-start gap-4 p-4 rounded-lg bg-secondary/50 hover:bg-secondary transition-all duration-300 animate-flip-3d"
+                style={{ 
+                  animationDelay: `${index * 0.15}s`,
+                  transform: 'perspective(1000px)',
+                  boxShadow: '0 10px 25px rgba(0, 0, 0, 0.4)'
+                }}
               >
                 <div className="p-2 rounded-lg bg-gradient-primary">
                   <highlight.icon className="h-6 w-6 text-primary-foreground" />

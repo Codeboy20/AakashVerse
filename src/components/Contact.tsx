@@ -34,8 +34,8 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4 bg-secondary/20">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent px-4 leading-tight" style={{ textShadow: '0 4px 8px rgba(0,0,0,0.3)', wordBreak: 'break-word' }}>
             Let's Build Something Intelligent Together
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -43,7 +43,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <Card className="p-8 md:p-12 bg-card/50 backdrop-blur border-border/50">
+        <Card className="p-8 md:p-12 bg-card/50 backdrop-blur border-border/50 animate-slide-3d" style={{ transform: 'perspective(1000px)', boxShadow: '0 15px 35px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3)' }}>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <Input
